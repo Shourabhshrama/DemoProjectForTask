@@ -1,0 +1,31 @@
+<!-- item_post.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- Define your data variables here -->
+        <variable
+            name="post"
+            type="com.app.demoprojectfortask.data.remote.models.PostResponseItem" />
+    </data>
+
+    <!-- Layout for a single post item -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="@{post.title}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{post.body}" />
+    </LinearLayout>
+</layout>
